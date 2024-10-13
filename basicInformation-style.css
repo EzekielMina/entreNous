@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: Oswald, sans-serif;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+    background-color: white;
+    color: #00367e;
+}
+
+header {
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: white; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 7rem;
+    color: #00367e;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: #00367e;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color: #0b64da;
+    border-bottom: 3px solid #0b64da;
+    
+}
+
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #0b64da;
+        border-bottom: 3px solid #0b64da;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem;
+        background-color: #e7e7e7;
+        border-top: 0.1rem solid rgba(255, 255, 255, 0.1);
+    }
+    nav.active{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #0b64da;
+    }
+}
+
+section {
+    min-height: 100vh;
+    padding: 20rem 15rem 5rem 15rem; /* top, right, bottom, left */
+    position: relative;
+    margin-top: 5rem; /* Adjust this to match the header height */
+    align-items: center;
+}
+
+.information {
+    background-color: white;
+}
+
+.information-content {
+    position: relative;
+    /* Clear floats */
+    overflow: auto; /* Add this to clear floats */
+    margin-bottom: 5rem; /* Add space below the information content */
+    text-align: center;
+}
+
+.birthday, .address {
+    text-align: center;
+    width: 50%; /* Each section takes up half the width */
+    margin: 0 auto;
+}
+
+.birthday {
+    float: center; /* Float the birthday to the left */
+
+}
+
+.birthday h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 2;
+
+}
+
+.birthday p {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.address {
+    float: center; /* Float the address to the right */
+    padding-top: 5rem; /* Space above the address */
+    margin-bottom: 5rem; /* Add space below the address */
+}
+
+.address h1 {
+    font-size: 6rem; /* Heading size */
+    font-weight: 700;
+    line-height: 2;
+}
+
+.address p {
+    font-size: 3rem; /* Smaller size for the address text */
+    font-weight: 400; /* Adjust weight for distinction */
+
+}
+
+
+
+
+
+
+
+
+/* Add styling for the family section */
+.family {
+    clear: both; /* Clear the floats, so the family section stays below */
+    text-align: center; /* Center the family section */
+    margin-top: 5rem; /* Space above the family section */
+}
+
+.family h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.family-table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 2rem; /* Space between columns */
+    margin-top: 3rem; /* Space above the table */
+}
+
+.family-member {
+    color: #00367e; /* Set text color */
+}
+
+.family-member h3 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.family-member p {
+    font-size: 2rem;
+}
+
+img {
+    max-width: 100%; /* Ensures the image won't exceed the screen width */
+    max-height: 100vh; /* Ensures the image won't exceed the screen height */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Removes inline-block spacing */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+.photo-placeholder {
+    width: 100%; /* Make placeholder width full */
+    height: auto; /* Set a height for the placeholder */
+    object-fit: contain;
+    background-color: rgba(0, 0, 0, 0.1); /* Light transparent background */
+    border-radius: 1rem; /* Rounded corners */
+    margin-top: 1rem; /* Space above the photo placeholder */
+}
