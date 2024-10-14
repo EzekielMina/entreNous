@@ -13,12 +13,24 @@ html {
     font-size: 62.5%;
 }
 
-body {
+html, body {
     width: 100%;
     height: 100vh;
-    /* overflow: hidden; */
+    overflow: auto; /* Prevent scrollbar on the root elements */
     background-color: white;
     color: #00367e;
+}
+
+.content-wrapper {
+    overflow-y: auto; /* Allow vertical scrolling */
+    height: 100vh;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For IE and Edge */
+}
+
+/* Hide scrollbar in WebKit browsers */
+.content-wrapper::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit-based browsers */
 }
 
 header {
@@ -94,6 +106,8 @@ nav a.active{
         border-bottom: 0.5rem solid #0b64da;
     }
 }
+
+
 
 section {
     min-height: 100vh;
