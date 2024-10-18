@@ -1,0 +1,139 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #00367e;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: #00367e;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover, nav a.active {
+    color: #0b64da;
+    border-bottom: 3px solid #0b64da;
+}
+
+
+.content-wrapper {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+
+/* General section styles with background images */
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.fullscreen-baguio {
+    background-image: url(images\home\slu-js.jpg);
+    filter: brightness(0.5); /* Darken for better contrast */
+}
+
+.burnham-park {
+    background-image: url(images\home\slu-js.jpg);
+    filter: brightness(0.5);
+}
+
+.botanical-garden {
+    background-image: url(images\home\slu-js.jpg);
+    filter: brightness(0.5);
+}
+
+.mines-view-park {
+    background-image: url(images\home\slu-js.jpg);
+    filter: brightness(0.5);
+}
+
+.session-road {
+    background-image: url(images\home\slu-js.jpg);
+    filter: brightness(0.5);
+}
+
+.cathedral {
+    background-image: url(images\home\slu-js.jpg);
+    filter: brightness(0.5);
+}
+
+.sm {
+    background-image: url(images\home\slu-js.jpg);
+    filter: brightness(0.5);
+}
+
+/* Text styling for overlays */
+.section h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    z-index: 10;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Add shadow for better readability */
+}
+
+.text-places-to-visit h1 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.text-places-to-visit h2 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.text-places-to-visit h3 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.text-places-to-visit p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
