@@ -131,8 +131,7 @@ span{
 
 .home-img img{
     position: relative;
-    width: 32vw;
-    box-shadow: 0 0 25px solid #0b64da;
+    width: 36vw;
     cursor: pointer;
     transition: 0.2s linear;
 }
@@ -162,27 +161,6 @@ span{
     transform: scale(1.3) translateY(-5px);
     background-color: #0b64da;
     box-shadow: 0  0 25px #0b64da;
-}
-
-.btn{
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    background-color: white;
-    border-radius: 4rem;
-    font-size: 1.6rem;
-    color: #0b64da;
-    letter-spacing: 0.3rem;
-    font-weight: 600;
-    border: 2px solid #0b64da;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-
-.btn:hover{
-    transform: scale(1.03);
-    background-color: #0b64da;
-    color: white;
-    box-shadow: 0 0 25px #0b64da;
 }
 
 .typing-text{
