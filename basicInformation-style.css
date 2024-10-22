@@ -205,10 +205,11 @@ section {
 
 img {
     max-width: 100%; /* Ensures the image won't exceed the screen width */
-    max-height: 100vh; /* Ensures the image won't exceed the screen height */
+    max-height: 35vh; /* Ensures the image won't exceed the screen height */
     width: auto; /* Maintain aspect ratio */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Removes inline-block spacing */
+    margin: 0 auto; /* Center the image horizontally */
     margin: 0 auto; /* Center the image horizontally */
 }
 
