@@ -133,10 +133,6 @@ section {
     margin: 0 auto;
 }
 
-.birthday {
-    float: center;
-
-}
 
 .birthday h1{
     font-size: 6rem;
@@ -151,7 +147,6 @@ section {
 }
 
 .address {
-    float: center;
     padding-top: 5rem; 
     margin-bottom: 5rem;
 }
