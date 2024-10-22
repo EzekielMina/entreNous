@@ -110,9 +110,9 @@ nav a.active{
 
 section {
     min-height: 100vh;
-    padding: 20rem 15rem 5rem 15rem; /* top, right, bottom, left */
+    padding: 20rem 15rem 5rem 15rem;
     position: relative;
-    margin-top: 5rem; /* Adjust this to match the header height */
+    margin-top: 5rem;
     align-items: center;
 }
 
@@ -122,20 +122,19 @@ section {
 
 .information-content {
     position: relative;
-    /* Clear floats */
-    overflow: auto; /* Add this to clear floats */
-    margin-bottom: 5rem; /* Add space below the information content */
+    overflow: auto; 
+    margin-bottom: 5rem;
     text-align: center;
 }
 
 .birthday, .address {
     text-align: center;
-    width: 50%; /* Each section takes up half the width */
+    width: 50%;
     margin: 0 auto;
 }
 
 .birthday {
-    float: center; /* Float the birthday to the left */
+    float: center;
 
 }
 
@@ -152,29 +151,27 @@ section {
 }
 
 .address {
-    float: center; /* Float the address to the right */
-    padding-top: 5rem; /* Space above the address */
-    margin-bottom: 5rem; /* Add space below the address */
+    float: center;
+    padding-top: 5rem; 
+    margin-bottom: 5rem;
 }
 
 .address h1 {
-    font-size: 6rem; /* Heading size */
+    font-size: 6rem;
     font-weight: 700;
     line-height: 2;
 }
 
 .address p {
-    font-size: 3rem; /* Smaller size for the address text */
-    font-weight: 400; /* Adjust weight for distinction */
+    font-size: 3rem;
+    font-weight: 400;
 
 }
 
-
-/* Add styling for the family section */
 .family {
-    clear: both; /* Clear the floats, so the family section stays below */
-    text-align: center; /* Center the family section */
-    margin-top: 5rem; /* Space above the family section */
+    clear: both;
+    text-align: center; 
+    margin-top: 5rem;
 }
 
 .family h1 {
@@ -185,13 +182,13 @@ section {
 
 .family-table {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-    gap: 2rem; /* Space between columns */
-    margin-top: 3rem; /* Space above the table */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem; 
 }
 
 .family-member {
-    color: white; /* Set text color */
+    color: white;
 }
 
 .family-member h3 {
@@ -204,21 +201,21 @@ section {
 }
 
 img {
-    max-width: 100%; /* Ensures the image won't exceed the screen width */
-    max-height: 35vh; /* Ensures the image won't exceed the screen height */
-    width: auto; /* Maintain aspect ratio */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Removes inline-block spacing */
-    margin: 0 auto; /* Center the image horizontally */
-    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; 
+    max-height: 35vh;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin: 0 auto;
 }
 
 
 .photo-placeholder {
-    width: 100%; /* Make placeholder width full */
-    height: auto; /* Set a height for the placeholder */
+    width: 100%;
+    height: auto;
     object-fit: contain;
-    background-color: rgba(0, 0, 0, 0.1); /* Light transparent background */
-    border-radius: 1rem; /* Rounded corners */
-    margin-top: 1rem; /* Space above the photo placeholder */
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    margin-top: 1rem;
 }
